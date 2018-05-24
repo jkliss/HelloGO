@@ -17,7 +17,11 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="0dp"
         android:gravity="center"
-        android:numColumns="20">
+        android:numColumns="20"
+        android:scrollbars="horizontal|vertical"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
 
     </GridView>
 
@@ -32,6 +36,7 @@
             android:layout_height="50pt"
             android:contentDescription="@string/app_name"
             android:src="@drawable/blue_box"
+            android:theme="?attr/borderlessButtonStyle"
             android:visibility="visible" />
 
         <ImageButton
